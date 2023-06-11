@@ -1,17 +1,16 @@
-// Given array
-var players = ["John", "Mike", "Sarah"];
+const players = ["John", "Bob", "Alice", "Poppy"];
 
-// Given object
-var person = {
-  name: "David",
-  age: 25,
+const person = {
+  name: "John Doe",
+  age: 80,
 };
 
-// Create a reference to the players array
-var team = players;
-
-// Create a copy of the players array
-var team1 = [...players];
-
-// Create a copy of the person object
-var cap1 = Object.assign({}, person);
+// Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
+let team = players;
+let team1 = JSON.parse(JSON.stringify(players));
+let cap1 = JSON.parse(JSON.stringify(person));
+window.players = players;
+window.person = person;
+window.team = team;
+window.team1 = team1;
+window.cap1 = cap1;
