@@ -11,7 +11,7 @@ var person = {
 var team = players;
 
 // Create a copy of the players array
-var team1 = players.slice();
+var team1 = [...players];
 
 // Create a copy of the person object
 var cap1 = Object.assign({}, person);
